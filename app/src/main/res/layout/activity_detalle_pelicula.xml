@@ -5,13 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/black"
-    tools:context=".detalle_pelicula">
+    android:orientation="vertical"
+    tools:context=".detalle_pelicula"
+    tools:ignore="ExtraText">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
@@ -24,22 +25,50 @@
             android:id="@+id/tv_nombre_pelicula"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:paddingLeft="25dp"
-            android:textSize="20sp"
-            android:text="Bones"
             android:layout_gravity="center"
-            android:textColor="@color/yellow" />
+            android:paddingLeft="25dp"
+            android:text="Bones"
+            android:textColor="@color/yellow"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv_pelicula_desc"
-            android:layout_marginTop="18dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
             android:paddingHorizontal="25dp"
-            android:textSize="14sp"
             android:text="Aquí descripción de película"
-            android:textColor="@color/yellow" />
+            android:textColor="@color/yellow"
+            android:textSize="14sp" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/yellow" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/buyTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:textColor="@color/black"
+        android:paddingHorizontal="@dimen/paddingButton"
+        android:text="BUY MY TICKETS!" />
+
+    <TextView
+        android:id="@+id/seatLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="20 seats available"
+        android:gravity="center_horizontal"
+        android:textColor="@color/mainText"
+        android:textSize="14sp" />
 </LinearLayout>
